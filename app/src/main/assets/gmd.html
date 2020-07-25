@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+        <link href="f.css" rel="stylesheet"/>
+
+        <script src="js/j.js" type="text/javascript"></script><script src="js/s.js" type="text/javascript"></script>
+    			<script src="js/suara.js"></script>
+
+	</head>	
+	<style>
+
+ #tejaul {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+		margin-bottom:50px
+
+}
+
+#tejaul li a {border-radius:15px;
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+background: #FFEB9E;    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 12px; /* Increase the font-size */
+    color: #000000; /* Add a black text color */
+	font-weight:bold;
+    display: block; /* Make it into a block element to fill the whole list */
+	    background-image: url('play.png'); /* Add a search icon to input */
+    background-position: 5px 5px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+background-size: 30px 30px;padding-left:40px;
+}
+
+#tejaul li a.header {
+    background-color: #e2e2e2; /* Add a darker background color for headers */
+    cursor: default; /* Change cursor style */
+}
+
+#tejaul li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}	 
+</style>
+
+<body>
+<div style="position:fixed;bottom:-10px;margin-left:3px"><audio preload="none"></audio></div>
+ <div class="tejas">
+ 
+ <input type="text" id="myInput" onkeyup="scrFunction()" placeholder="Search Surah..">
+
+<ul id="tejaul">
+
+
+<li><a data-src="http://server7.mp3quran.net/s_gmd/001.mp3" href="#">1. AL-FAATIHAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/002.mp3" href="#">2. AL-BAQARAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/003.mp3" href="#">3. A-LI'IMRAAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/004.mp3" href="#">4. AN-NISAA'</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/005.mp3" href="#">5. AL-MAAIDAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/006.mp3" href="#">6. AL-AN'AAM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/007.mp3" href="#">7. AL-A'RAAF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/008.mp3" href="#">8. Al-ANFAAL</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/009.mp3" href="#">9. AT-TAUBAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/010.mp3" href="#">10. YUNUS</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/011.mp3" href="#">11. HUD</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/012.mp3" href="#">12. YUSUF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/013.mp3" href="#">13. AR-RA'D</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/014.mp3" href="#">14. IBRAHIM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/015.mp3" href="#">15. AL-HIJR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/016.mp3" href="#">16. AL-NAHL</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/017.mp3" href="#">17. AL-ISRAA'</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/018.mp3" href="#">18. AL-KAHFI</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/019.mp3" href="#">19. MARYAM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/020.mp3" href="#">20. TAHA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/021.mp3" href="#">21. AL-ANBIYAA'</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/022.mp3" href="#">22. AL-HAJJ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/023.mp3" href="#">23. AL-MU'MINUUN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/024.mp3" href="#">24. AN-NUUR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/025.mp3" href="#">25. AL-FURQAAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/026.mp3" href="#">26. ASY-SYU'ARAA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/027.mp3" href="#">27. AN-NAML</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/028.mp3" href="#">28. AL-QASAS</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/029.mp3" href="#">29. AL-'ANKABUUT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/030.mp3" href="#">30. AR-RUUM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/031.mp3" href="#">31. LUQMAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/032.mp3" href="#">32. AS-SAJDAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/033.mp3" href="#">33. AL-AHZAAB</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/034.mp3" href="#">34. SABA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/035.mp3" href="#">35. FAATIR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/036.mp3" href="#">36. YAA SIIN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/037.mp3" href="#">37. AS-SAAFFAAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/038.mp3" href="#">38. SAAD</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/039.mp3" href="#">39. AZ-ZUMAR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/040.mp3" href="#">40. GHAAFIR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/041.mp3" href="#">41. FUSSILAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/042.mp3" href="#">42. ASY-SYUURA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/043.mp3" href="#">43. AZ-ZUKHRUF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/044.mp3" href="#">44. AD-DUKHAAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/045.mp3" href="#">45. AL-JAATHIYAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/046.mp3" href="#">46. AL-AHQAAF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/047.mp3" href="#">47. MUHAMMAD</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/048.mp3" href="#">48. AL-FATH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/049.mp3" href="#">49. AL-HUJURAAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/050.mp3" href="#">50. QAAF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/051.mp3" href="#">51. AZ-ZAARIYAAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/052.mp3" href="#">52. AT-TUUR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/053.mp3" href="#">53. AN-NAJM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/054.mp3" href="#">54. AL-QAMAR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/055.mp3" href="#">55. AR-RAHMAAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/056.mp3" href="#">56. AL-WAAQI'AH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/057.mp3" href="#">57. AL-HADIID</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/058.mp3" href="#">58. AL-MUJAADALAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/059.mp3" href="#">59. AL-HASYR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/060.mp3" href="#">60. AL-MUMTAHANAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/061.mp3" href="#">61. AS-SAFF</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/062.mp3" href="#">62. AL-JUMU'AH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/063.mp3" href="#">63. AL-MUNAAFIQUUN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/064.mp3" href="#">64. AT-TAGHAABUN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/065.mp3" href="#">65. AT-TALAAQ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/066.mp3" href="#">66. AT-TAHRIIM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/067.mp3" href="#">67. AL-MULK</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/068.mp3" href="#">68. AL-QALAM</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/069.mp3" href="#">69. AL-HAAQQAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/070.mp3" href="#">70. AL-MA'AARIJ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/071.mp3" href="#">71. NUH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/072.mp3" href="#">72. AL-JINN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/073.mp3" href="#">73. AL-MUZZAMMIL</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/074.mp3" href="#">74. AL-MUDDATHTHIR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/075.mp3" href="#">75. AL-QIAAMAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/076.mp3" href="#">76. AL-INSAAN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/077.mp3" href="#">77. AL-MURSALAAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/078.mp3" href="#">78. AN-NABA'</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/079.mp3" href="#">79. AN-NAAZI'AAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/080.mp3" href="#">80. 'ABASA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/081.mp3" href="#">81. AT-TAKWIIR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/082.mp3" href="#">82. AL-INFITAAR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/083.mp3" href="#">83. AL-MUTAFFIFIIN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/084.mp3" href="#">84. AL-INSYIQAAQ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/085.mp3" href="#">85. AL-BURUUJ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/086.mp3" href="#">86. AT-TAARIQ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/087.mp3" href="#">87. AL-A'LAA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/088.mp3" href="#">88. AL-GHAASYIYAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/089.mp3" href="#">89. AL-FAJR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/090.mp3" href="#">90. AL-BALAD</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/091.mp3" href="#">91. ASY-SYAMS</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/092.mp3" href="#">92. AL-LAIL</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/093.mp3" href="#">93. ADH-DHUHA</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/094.mp3" href="#">94. ASY-SYARH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/095.mp3" href="#">95. AT-TIIN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/096.mp3" href="#">96. AL-'ALAQ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/097.mp3" href="#">97. AL-QADR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/098.mp3" href="#">98. AL-BAYYINAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/099.mp3" href="#">99. AZ-ZALZALAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/100.mp3" href="#">100. AL-'AADIYAAT</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/101.mp3" href="#">101. AL-QAARI'AH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/102.mp3" href="#">102. AT-TAKAATHUR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/103.mp3" href="#">103. AL-'ASR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/104.mp3" href="#">104. AL-HUMAZAH</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/105.mp3" href="#">105. AL-FIIL</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/106.mp3" href="#">106. QARISY</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/107.mp3" href="#">107. AL-MAA'UUN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/108.mp3" href="#">108. AL-KAUTHAR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/109.mp3" href="#">109. AL-KAAFIRUUN</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/110.mp3" href="#">110. AN-NASR</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/111.mp3" href="#">111. AL-LAHAB</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/112.mp3" href="#">112. AL-IKHLAAS</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/113.mp3" href="#">113. AL-FALAQ</a></li>
+<li><a data-src="http://server7.mp3quran.net/s_gmd/114.mp3" href="#">114. AN-NAAS</a></li>
+
+
+</ul>
+
+
+
+</div>
+
+
+</body>
+</html>

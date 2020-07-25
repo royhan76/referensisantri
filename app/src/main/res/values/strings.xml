@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Referensi Santri</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">REFERENSI SANTRI</string>
+    <string name="nav_header_subtitle">Karya Santri Untuk Negeri</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Tentang</string>
+
+    <string name="unit_ad_app_real">ca-app-pub-1045901976964837/7802128000</string>
+    <string name="ads_banner_test">ca-app-pub-1045901976964837/7802128000</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
